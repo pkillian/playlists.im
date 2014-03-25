@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>339307F1-91FC-4A22-8562-70C621BDDEFA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Playlists</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>80D3DD89-F966-47C4-97D5-2ECA2DB34FEB</key>
+		<string>ssh://github.com/pkillian/playlists.im.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>osx/Playlists/Playlists.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>80D3DD89-F966-47C4-97D5-2ECA2DB34FEB</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pkillian/playlists.im.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>80D3DD89-F966-47C4-97D5-2ECA2DB34FEB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>80D3DD89-F966-47C4-97D5-2ECA2DB34FEB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>playlists</string>
+		</dict>
+	</array>
+</dict>
+</plist>
