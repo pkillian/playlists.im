@@ -722,11 +722,14 @@
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="loginProgress" destination="d1M-ny-GTL" id="buu-KV-avt"/>
                 <outlet property="loginWindow" destination="s0q-e2-PG7" id="djz-Xy-OLx"/>
                 <outlet property="mSpotifyUriField" destination="khk-yO-GnM" id="Fu6-Wq-20A"/>
                 <outlet property="mainWindow" destination="ZFD-ft-kkH" id="kNd-KX-zoR"/>
+                <outlet property="passwordField" destination="RoR-hK-RKl" id="Dkd-ui-MSb"/>
                 <outlet property="play" destination="gyV-Q7-hDB" id="QFr-vt-fIQ"/>
                 <outlet property="uriField" destination="khk-yO-GnM" id="7cg-4m-fsv"/>
+                <outlet property="usernameField" destination="0bl-z3-yMm" id="T03-9S-tt2"/>
                 <outlet property="window" destination="ZFD-ft-kkH" id="vc3-jI-Lwl"/>
             </connections>
         </customObject>
@@ -747,6 +750,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="quit:" target="494" id="id0-S3-Egw"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AYx-QR-GRo">
                         <rect key="frame" x="250" y="30" width="115" height="25"/>
@@ -755,6 +761,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="login:" target="494" id="u28-BC-jJX"/>
+                        </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-z3-yMm">
                         <rect key="frame" x="170" y="94" width="290" height="22"/>

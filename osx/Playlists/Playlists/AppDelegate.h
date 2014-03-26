@@ -10,10 +10,18 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+
 # pragma mark -
 # pragma mark Login Window
 
 @property (unsafe_unretained) IBOutlet NSWindow *loginWindow;
+@property (weak) IBOutlet NSProgressIndicator *loginProgress;
+@property (weak) IBOutlet NSTextField *usernameField;
+@property (weak) IBOutlet NSTextField *passwordField;
+
+- (IBAction)login:(id)sender;
+- (IBAction)quit:(id)sender;
+
 
 # pragma mark -
 # pragma mark Main Window

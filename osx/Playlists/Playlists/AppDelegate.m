@@ -21,4 +21,9 @@
 - (IBAction)pause:(id)sender {
 }
 
+- (IBAction)quit:(id)sender {
+}
+
+- (IBAction)login:(id)sender {
+}
 @end
