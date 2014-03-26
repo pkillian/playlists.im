@@ -652,12 +652,13 @@
             <rect key="contentRect" x="196" y="207" width="540" height="202"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <value key="minSize" type="size" width="540" height="202"/>
+            <value key="maxSize" type="size" width="540" height="202"/>
             <view key="contentView" id="daA-OL-vzk">
                 <rect key="frame" x="0.0" y="0.0" width="540" height="202"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="khk-yO-GnM">
-                        <rect key="frame" x="63" y="81" width="415" height="22"/>
+                        <rect key="frame" x="20" y="81" width="411" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="RXN-Ly-6MB">
                             <font key="font" metaFont="system"/>
@@ -666,7 +667,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-Q7-hDB">
-                        <rect key="frame" x="63" y="49" width="86" height="25"/>
+                        <rect key="frame" x="20" y="49" width="86" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="86" id="mRi-hQ-F5F"/>
@@ -680,7 +681,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-Hu-HBE">
-                        <rect key="frame" x="157" y="49" width="86" height="25"/>
+                        <rect key="frame" x="114" y="49" width="86" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="86" id="lcI-43-ZhA"/>
@@ -705,18 +706,28 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ld8-Yi-ERv">
+                        <rect key="frame" x="436" y="48" width="87" height="87"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="2sa-Ui-v5M"/>
+                            <constraint firstAttribute="height" constant="81" id="85T-V2-Ieq"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="Ly7-8U-PXX"/>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="khk-yO-GnM" firstAttribute="leading" secondItem="daA-OL-vzk" secondAttribute="leading" constant="20" id="8bg-Qt-7Nq"/>
                     <constraint firstAttribute="centerX" secondItem="wWD-qD-utb" secondAttribute="centerX" constant="-0.5" id="9fb-SH-iWy"/>
                     <constraint firstItem="uV8-Hu-HBE" firstAttribute="top" secondItem="khk-yO-GnM" secondAttribute="bottom" constant="8" id="9qD-CH-ErI"/>
                     <constraint firstItem="khk-yO-GnM" firstAttribute="leading" secondItem="gyV-Q7-hDB" secondAttribute="leading" id="Mg4-iE-SDW"/>
                     <constraint firstItem="gyV-Q7-hDB" firstAttribute="top" secondItem="khk-yO-GnM" secondAttribute="bottom" constant="8" id="QPx-Bk-nxC"/>
-                    <constraint firstAttribute="centerY" secondItem="khk-yO-GnM" secondAttribute="centerY" constant="-9" id="T3B-SV-uGH"/>
                     <constraint firstItem="wWD-qD-utb" firstAttribute="top" secondItem="daA-OL-vzk" secondAttribute="top" constant="40" id="XUw-lq-CsK"/>
-                    <constraint firstAttribute="trailing" secondItem="khk-yO-GnM" secondAttribute="trailing" constant="62" id="asp-WK-sFd"/>
+                    <constraint firstItem="Ld8-Yi-ERv" firstAttribute="leading" secondItem="khk-yO-GnM" secondAttribute="trailing" constant="8" id="cRb-n1-gfI"/>
                     <constraint firstItem="uV8-Hu-HBE" firstAttribute="leading" secondItem="gyV-Q7-hDB" secondAttribute="trailing" constant="8" id="csR-Aj-3cN"/>
-                    <constraint firstItem="khk-yO-GnM" firstAttribute="leading" secondItem="daA-OL-vzk" secondAttribute="leading" constant="63" id="fj5-q9-qml"/>
+                    <constraint firstAttribute="trailing" secondItem="Ld8-Yi-ERv" secondAttribute="trailing" constant="20" id="dB0-9T-Axs"/>
                     <constraint firstItem="khk-yO-GnM" firstAttribute="top" secondItem="wWD-qD-utb" secondAttribute="bottom" constant="42" id="hQi-Ln-U1I"/>
+                    <constraint firstItem="gyV-Q7-hDB" firstAttribute="leading" secondItem="daA-OL-vzk" secondAttribute="leading" constant="20" id="q5f-B8-sle"/>
                 </constraints>
             </view>
         </window>
@@ -739,6 +750,8 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="109" y="132" width="480" height="136"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <value key="minSize" type="size" width="480" height="136"/>
+            <value key="maxSize" type="size" width="480" height="136"/>
             <view key="contentView" id="dlx-Sk-bpd">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="136"/>
                 <autoresizingMask key="autoresizingMask"/>
