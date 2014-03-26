@@ -10,12 +10,18 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSTextField *mSpotifyUriField;
+# pragma mark -
+# pragma mark Login Window
 
-- (IBAction)playSong:(id)sender;
-- (IBAction)playArtist:(id)sender;
-- (IBAction)playPlaylist:(id)sender;
-- (IBAction)clearUriField:(id)sender;
+@property (unsafe_unretained) IBOutlet NSWindow *loginWindow;
+
+# pragma mark -
+# pragma mark Main Window
+
+@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *uriField;
+
+- (IBAction)play:(id)sender;
+- (IBAction)pause:(id)sender;
 
 @end

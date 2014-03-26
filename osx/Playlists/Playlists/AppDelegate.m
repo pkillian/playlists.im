@@ -13,23 +13,12 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-
 }
 
-- (IBAction)playSong:(id)sender {
-
+- (IBAction)play:(id)sender {
 }
 
-- (IBAction)playArtist:(id)sender {
-
-}
-
-- (IBAction)playPlaylist:(id)sender {
-
-}
-
-- (IBAction)clearUriField:(id)sender {
-
+- (IBAction)pause:(id)sender {
 }
 
 @end

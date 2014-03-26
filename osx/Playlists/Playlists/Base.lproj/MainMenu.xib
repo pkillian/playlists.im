@@ -671,54 +671,26 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="86" id="mRi-hQ-F5F"/>
                         </constraints>
-                        <buttonCell key="cell" type="squareTextured" title="Song" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ao9-8e-HYP">
+                        <buttonCell key="cell" type="squareTextured" title="Play" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ao9-8e-HYP">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="playSong:" target="494" id="mSa-Mu-g7O"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zyh-M1-rLJ">
-                        <rect key="frame" x="157" y="49" width="86" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="86" id="tfC-Ud-0db"/>
-                        </constraints>
-                        <buttonCell key="cell" type="squareTextured" title="Artist" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WAb-N6-JrM">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="playArtist:" target="494" id="7H3-Do-J1t"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YJG-nS-n7B">
-                        <rect key="frame" x="251" y="49" width="86" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="86" id="oIo-fL-Byn"/>
-                        </constraints>
-                        <buttonCell key="cell" type="squareTextured" title="Playlist" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PRA-t0-GyH">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="playPlaylist:" target="494" id="GKr-wK-sSd"/>
+                            <action selector="play:" target="494" id="RKj-EE-uG1"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-Hu-HBE">
-                        <rect key="frame" x="392" y="49" width="86" height="25"/>
+                        <rect key="frame" x="157" y="49" width="86" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="86" id="lcI-43-ZhA"/>
                         </constraints>
-                        <buttonCell key="cell" type="squareTextured" title="Clear" bezelStyle="texturedSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6St-hS-yyy">
+                        <buttonCell key="cell" type="squareTextured" title="Pause" bezelStyle="texturedSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6St-hS-yyy">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="clearUriField:" target="494" id="MMk-pR-u1U"/>
+                            <action selector="pause:" target="494" id="fGY-2h-Isn"/>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wWD-qD-utb">
@@ -738,25 +710,94 @@
                     <constraint firstAttribute="centerX" secondItem="wWD-qD-utb" secondAttribute="centerX" constant="-0.5" id="9fb-SH-iWy"/>
                     <constraint firstItem="uV8-Hu-HBE" firstAttribute="top" secondItem="khk-yO-GnM" secondAttribute="bottom" constant="8" id="9qD-CH-ErI"/>
                     <constraint firstItem="khk-yO-GnM" firstAttribute="leading" secondItem="gyV-Q7-hDB" secondAttribute="leading" id="Mg4-iE-SDW"/>
-                    <constraint firstItem="zyh-M1-rLJ" firstAttribute="top" secondItem="khk-yO-GnM" secondAttribute="bottom" constant="8" id="NaJ-wF-yk6"/>
-                    <constraint firstItem="YJG-nS-n7B" firstAttribute="leading" secondItem="zyh-M1-rLJ" secondAttribute="trailing" constant="8" id="PSO-fv-s9D"/>
                     <constraint firstItem="gyV-Q7-hDB" firstAttribute="top" secondItem="khk-yO-GnM" secondAttribute="bottom" constant="8" id="QPx-Bk-nxC"/>
                     <constraint firstAttribute="centerY" secondItem="khk-yO-GnM" secondAttribute="centerY" constant="-9" id="T3B-SV-uGH"/>
-                    <constraint firstItem="uV8-Hu-HBE" firstAttribute="trailing" secondItem="khk-yO-GnM" secondAttribute="trailing" id="TcN-s4-Zj5"/>
                     <constraint firstItem="wWD-qD-utb" firstAttribute="top" secondItem="daA-OL-vzk" secondAttribute="top" constant="40" id="XUw-lq-CsK"/>
                     <constraint firstAttribute="trailing" secondItem="khk-yO-GnM" secondAttribute="trailing" constant="62" id="asp-WK-sFd"/>
+                    <constraint firstItem="uV8-Hu-HBE" firstAttribute="leading" secondItem="gyV-Q7-hDB" secondAttribute="trailing" constant="8" id="csR-Aj-3cN"/>
                     <constraint firstItem="khk-yO-GnM" firstAttribute="leading" secondItem="daA-OL-vzk" secondAttribute="leading" constant="63" id="fj5-q9-qml"/>
                     <constraint firstItem="khk-yO-GnM" firstAttribute="top" secondItem="wWD-qD-utb" secondAttribute="bottom" constant="42" id="hQi-Ln-U1I"/>
-                    <constraint firstItem="YJG-nS-n7B" firstAttribute="top" secondItem="khk-yO-GnM" secondAttribute="bottom" constant="8" id="qci-NR-zkW"/>
-                    <constraint firstItem="zyh-M1-rLJ" firstAttribute="leading" secondItem="gyV-Q7-hDB" secondAttribute="trailing" constant="8" id="rVs-55-Pco"/>
                 </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="loginWindow" destination="s0q-e2-PG7" id="djz-Xy-OLx"/>
                 <outlet property="mSpotifyUriField" destination="khk-yO-GnM" id="Fu6-Wq-20A"/>
+                <outlet property="mainWindow" destination="ZFD-ft-kkH" id="kNd-KX-zoR"/>
+                <outlet property="play" destination="gyV-Q7-hDB" id="QFr-vt-fIQ"/>
+                <outlet property="uriField" destination="khk-yO-GnM" id="7cg-4m-fsv"/>
+                <outlet property="window" destination="ZFD-ft-kkH" id="vc3-jI-Lwl"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <window title="Spotify Login" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="s0q-e2-PG7">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="109" y="132" width="480" height="136"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="dlx-Sk-bpd">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7SF-Nf-gZU">
+                        <rect key="frame" x="116" y="30" width="115" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundTextured" title="Quit" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qx9-9a-RIy">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AYx-QR-GRo">
+                        <rect key="frame" x="250" y="30" width="115" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundTextured" title="Login" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d4M-64-R5x">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-z3-yMm">
+                        <rect key="frame" x="170" y="94" width="290" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ikf-i8-6Sr">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoR-hK-RKl">
+                        <rect key="frame" x="170" y="62" width="290" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="7dB-eF-j8R">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0z-i0-hej">
+                        <rect key="frame" x="18" y="99" width="146" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Username" id="M5t-QG-qce">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-zb-e9X">
+                        <rect key="frame" x="18" y="67" width="146" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Password" id="v0j-54-kOp">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="d1M-ny-GTL">
+                        <rect key="frame" x="373" y="35" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                </subviews>
+            </view>
+        </window>
     </objects>
 </document>
