@@ -16,4 +16,20 @@
 
 }
 
+- (IBAction)playSong:(id)sender {
+
+}
+
+- (IBAction)playArtist:(id)sender {
+
+}
+
+- (IBAction)playPlaylist:(id)sender {
+
+}
+
+- (IBAction)clearUriField:(id)sender {
+
+}
+
 @end

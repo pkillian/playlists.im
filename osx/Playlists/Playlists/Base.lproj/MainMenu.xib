@@ -675,6 +675,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="playSong:" target="494" id="mSa-Mu-g7O"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zyh-M1-rLJ">
                         <rect key="frame" x="157" y="49" width="86" height="25"/>
@@ -686,6 +689,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="playArtist:" target="494" id="7H3-Do-J1t"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YJG-nS-n7B">
                         <rect key="frame" x="251" y="49" width="86" height="25"/>
@@ -697,6 +703,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="playPlaylist:" target="494" id="GKr-wK-sSd"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-Hu-HBE">
                         <rect key="frame" x="392" y="49" width="86" height="25"/>
@@ -708,6 +717,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="clearUriField:" target="494" id="MMk-pR-u1U"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wWD-qD-utb">
                         <rect key="frame" x="170" y="145" width="201" height="17"/>
@@ -740,7 +752,11 @@
                 </constraints>
             </view>
         </window>
-        <customObject id="494" customClass="AppDelegate"/>
+        <customObject id="494" customClass="AppDelegate">
+            <connections>
+                <outlet property="mSpotifyUriField" destination="khk-yO-GnM" id="Fu6-Wq-20A"/>
+            </connections>
+        </customObject>
         <customObject id="420" customClass="NSFontManager"/>
     </objects>
 </document>

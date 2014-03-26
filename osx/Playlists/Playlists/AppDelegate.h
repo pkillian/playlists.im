@@ -11,5 +11,11 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *mSpotifyUriField;
+
+- (IBAction)playSong:(id)sender;
+- (IBAction)playArtist:(id)sender;
+- (IBAction)playPlaylist:(id)sender;
+- (IBAction)clearUriField:(id)sender;
 
 @end
