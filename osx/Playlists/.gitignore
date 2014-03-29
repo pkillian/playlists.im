@@ -1,3 +1,7 @@
+# Hide application key from repo
+appkey.c
+
+# Typical settings for XCode project
 .DS_Store
 build/
 *.pbxuser
@@ -14,3 +18,4 @@ profile
 DerivedData
 .idea/
 Playlists.xcodeproj/project.pbxproj
+

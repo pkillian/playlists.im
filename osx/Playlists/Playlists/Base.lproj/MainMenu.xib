@@ -660,7 +660,7 @@
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="khk-yO-GnM">
                         <rect key="frame" x="20" y="81" width="411" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="RXN-Ly-6MB">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="spotify:track:0ZfCpjCT19gAXR17h4GQRT" placeholderString="" drawsBackground="YES" id="RXN-Ly-6MB">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -740,8 +740,10 @@
                 <outlet property="loginWindow" destination="s0q-e2-PG7" id="djz-Xy-OLx"/>
                 <outlet property="mSpotifyUriField" destination="khk-yO-GnM" id="Fu6-Wq-20A"/>
                 <outlet property="mainWindow" destination="ZFD-ft-kkH" id="kNd-KX-zoR"/>
-                <outlet property="passwordField" destination="RoR-hK-RKl" id="Dkd-ui-MSb"/>
+                <outlet property="passwordField" destination="Psc-05-inw" id="LOp-R8-aCg"/>
+                <outlet property="pauseButton" destination="uV8-Hu-HBE" id="y37-tz-upD"/>
                 <outlet property="play" destination="gyV-Q7-hDB" id="QFr-vt-fIQ"/>
+                <outlet property="playButton" destination="gyV-Q7-hDB" id="jOF-ww-OpA"/>
                 <outlet property="uriField" destination="khk-yO-GnM" id="7cg-4m-fsv"/>
                 <outlet property="usernameField" destination="0bl-z3-yMm" id="T03-9S-tt2"/>
                 <outlet property="window" destination="ZFD-ft-kkH" id="vc3-jI-Lwl"/>
@@ -784,16 +786,7 @@
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-z3-yMm">
                         <rect key="frame" x="170" y="94" width="290" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ikf-i8-6Sr">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoR-hK-RKl">
-                        <rect key="frame" x="170" y="62" width="290" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="7dB-eF-j8R">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="ikf-i8-6Sr">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -821,6 +814,18 @@
                         <rect key="frame" x="373" y="35" width="16" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </progressIndicator>
+                    <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Psc-05-inw">
+                        <rect key="frame" x="170" y="62" width="290" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="B9c-kF-N07">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </secureTextFieldCell>
+                    </secureTextField>
                 </subviews>
             </view>
         </window>

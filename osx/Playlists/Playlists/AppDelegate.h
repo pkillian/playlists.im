@@ -14,6 +14,8 @@
     SPPlaybackManager *playbackManager;
 }
 
+@property (nonatomic, readwrite, strong) SPPlaybackManager *playbackManager;
+
 
 # pragma mark -
 # pragma mark Login Window
@@ -22,6 +24,8 @@
 @property (weak) IBOutlet NSProgressIndicator *loginProgress;
 @property (weak) IBOutlet NSTextField *usernameField;
 @property (weak) IBOutlet NSTextField *passwordField;
+@property (weak) IBOutlet NSButton *playButton;
+@property (weak) IBOutlet NSButton *pauseButton;
 
 - (IBAction)login:(id)sender;
 - (IBAction)quit:(id)sender;
