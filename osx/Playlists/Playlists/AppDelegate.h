@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CocoaLibSpotify/CocoaLibSpotify.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, SPSessionDelegate> {
+@private
+    SPPlaybackManager *playbackManager;
+}
 
 
 # pragma mark -

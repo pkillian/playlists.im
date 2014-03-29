@@ -714,6 +714,9 @@
                             <constraint firstAttribute="height" constant="81" id="85T-V2-Ieq"/>
                         </constraints>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="Ly7-8U-PXX"/>
+                        <connections>
+                            <binding destination="494" name="value" keyPath="self.playbackManager.currentTrack.album.cover.image" id="uxA-LF-ydA"/>
+                        </connections>
                     </imageView>
                 </subviews>
                 <constraints>
